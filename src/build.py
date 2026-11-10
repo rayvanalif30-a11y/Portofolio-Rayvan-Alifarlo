@@ -19,4 +19,4 @@ for name in ['portfolio', 'cv']:
     h = h.replace('/*{{ENGINE_CSS}}*/', css).replace('/*{{ENGINE_JS}}*/', js)
     left = h.count('{{')
     (R.parent / ("index.html" if name == "portfolio" else "cv.html")).write_text(h, encoding='utf-8')
-    print(name + '.html', len(h) // 1024, 'KB', '(placeholder tersisa: %d)' % left)
+    print(("index" if name == "portfolio" else "cv") + ".html", len(h) // 1024, 'KB', '(placeholder tersisa: %d)' % left)
