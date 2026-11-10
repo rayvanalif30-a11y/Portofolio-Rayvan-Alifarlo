@@ -3,7 +3,7 @@ Usage: python src/build.py"""
 import base64, pathlib
 
 # Address of the CV site, used by the "CV" buttons.
-CV_URL = "cv.html"
+CV_URL = "https://cv-rayvanalifarlo.netlify.app/"
 
 R = pathlib.Path(__file__).parent
 b64 = lambda p: base64.b64encode((R / p).read_bytes()).decode()
