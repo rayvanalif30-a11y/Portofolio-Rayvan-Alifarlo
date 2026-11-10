@@ -1,22 +1,17 @@
-# Rayvan Alifarlo Mahesworo: Portfolio & CV
+# Rayvan Alifarlo Mahesworo: Portfolio
 
-Two pages, each a single self-contained HTML file (fonts, photo, and logos are inlined).
+A cinematic 3D portfolio: 8,000 dots form my name and reshape chapter by chapter as you scroll.
 
-| File | What it is |
-| --- | --- |
-| `index.html` | Portfolio: a cinematic 3D page where 8,000 dots reshape as you scroll |
-| `cv.html` | CV: a paper sheet that comes apart into layers, then turns over to the contact side |
-
-Open either file in a browser, or turn on GitHub Pages (Settings → Pages → Deploy from branch `main`, folder `/`).
+`index.html` is the whole site in one self-contained file (fonts, photo, and logos are inlined), so it can be hosted anywhere as a static page. The CV lives in its own repository: [CV-Rayvan-Alifarlo](https://github.com/rayvanalif30-a11y/CV-Rayvan-Alifarlo).
 
 ## Editing
 
 The editable source lives in `src/`:
 
-- `portfolio-src.html` and `cv-src.html`: the pages, with placeholders for fonts, images, and the engine
+- `portfolio-src.html`: the page, with placeholders for fonts, images, and the engine
 - `assets/`: photo, logos, fonts
 - `engine/`: the open-source scroll-craft engine
-- `build.py`: rebuilds `index.html` and `cv.html` in the repository root
+- `build.py`: rebuilds `index.html`; the CV address is set at the top
 
 ```bash
 python src/build.py
